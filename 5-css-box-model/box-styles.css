@@ -1,0 +1,66 @@
+h1, p {
+  background-color: #DDE0E3;    /* Light gray */
+}
+
+h1 {
+  padding: 50px;
+  border: 1px solid red; /* Size Stylee Color*/
+  /*border-bottom: 1px solid #5D6063; /*-top, -bottom, -left, and -right*/
+}
+/*
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+Is equivalent to
+p {
+  padding: 20px 10px;   Vertical  Horizontal
+}
+*/
+p {
+  padding: 20px 10 20px 0px;  /* Top  Right  Bottom  Left */
+  margin-bottom: 50px;
+}
+
+em, strong {
+  background-color: #B2D6FF;    /* Light blue */
+  display: inline;
+}
+
+strong {
+  margin: 50px;
+}
+
+/* test
+em {
+  padding: 50px;
+}*/
+
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px; /* = max size*/
+  box-sizing: border-box; /*200px is for all the box and not just the content, the content size is auto computed*/
+  margin: 20px auto; /* Vertical  Horizontal
+                      - because text-align is not applied to block-level
+                      - has no sense if width is not defined*/
+}
+
+body {
+  text-align: center;
+}
+
+/* Resetting Styles - removes the default margin, padding, box-sizinig style of the browser*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
